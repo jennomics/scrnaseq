@@ -9,7 +9,7 @@
 The minimum typical command for running the pipeline is as follows:
 
 ```bash
-nextflow run nf-core/scrnaseq --reads '*_R{1,2}.fastq.gz' --fasta human.fasta --gtf human.gtf -profile docker
+nextflow run nf-core/scrnaseq --input '*_R{1,2}.fastq.gz' --fasta human.fasta --gtf human.gtf -profile docker
 ```
 
 This will launch the pipeline with the `docker` configuration profile and default `--type` and `--barcode_whitelist`. See below for more information about profiles and these options.
